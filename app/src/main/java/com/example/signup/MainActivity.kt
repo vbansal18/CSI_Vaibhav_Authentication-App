@@ -14,13 +14,26 @@ class MainActivity : AppCompatActivity() {
 
 
         val branch: Spinner = findViewById(R.id.branch)
+        val year: Spinner = findViewById(R.id.year)
+
         ArrayAdapter.createFromResource(
             this,
             R.array.branch,
             android.R.layout.simple_spinner_item,
-        ).also{adapter ->
+        ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             branch.adapter = adapter
         }
+
+        ArrayAdapter.createFromResource(
+            this,
+            R.array.year,
+            android.R.layout.simple_spinner_item,
+        ).also{adapter ->
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            year.adapter = adapter
+        }
     }
+
+    fun onRadioButtonClicked(view: android.view.View) {}
 }

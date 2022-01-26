@@ -6,6 +6,7 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+
     <string-array name="branch">
         <item>CSE</item>
         <item>CSE-AIML</item>
@@ -17,7 +18,14 @@
         <item>EN</item>
         <item>ME</item>
         <item>CIVIL</item>
+    </string-array><string-array name="year">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
     </string-array>
+
+
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="create_password">Create Password</string>
@@ -30,4 +38,11 @@
     <string name="name">Name</string>
     <string name="sign_up">Sign Up</string>
     <string name="address">Address</string>
+    <string name="year">Year : </string>
+    <string name="branch">Branch : </string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="phone">+91 9876543210</string>
+    <string name="email">abc123xyz@gmail.com</string>
+    <string name="other">other</string>
 </resources>
