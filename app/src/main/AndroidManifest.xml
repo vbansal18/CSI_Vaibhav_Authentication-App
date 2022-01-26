@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SignUp">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/layout.bg" />
+
         <activity
             android:name=".Login"
             android:exported="false"

@@ -42,10 +42,12 @@
 
 
             <EditText
+                android:background="@drawable/layout_bg"
+                android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/name"
-                android:textSize="20sp" />
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -59,6 +61,8 @@
 
 
             <EditText
+                android:background="@drawable/layout_bg"
+                android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/roll_no"
@@ -75,6 +79,8 @@
 
 
             <EditText
+                android:background="@drawable/layout_bg"
+                android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/create_password"
@@ -140,6 +146,8 @@
 
 
             <EditText
+                android:background="@drawable/layout_bg"
+                android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/address"
@@ -156,6 +164,8 @@
 
 
             <EditText
+                android:background="@drawable/layout_bg"
+                android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/create_password"
@@ -176,8 +186,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/sign_up"
+                android:background="@drawable/layout_bg"
                 android:textAllCaps="false"
-                android:textSize="20sp" />
+                android:textSize="15sp" />
         </RelativeLayout>
 
 
