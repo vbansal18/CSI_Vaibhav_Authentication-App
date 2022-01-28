@@ -18,7 +18,8 @@
         <item>EN</item>
         <item>ME</item>
         <item>CIVIL</item>
-    </string-array><string-array name="year">
+    </string-array>
+    <string-array name="year">
         <item>1st</item>
         <item>2nd</item>
         <item>3rd</item>
@@ -45,4 +46,10 @@
     <string name="phone">+91 9876543210</string>
     <string name="email">abc123xyz@gmail.com</string>
     <string name="other">other</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="email_verification">EMAIL VERIFICATION</string>
+    <string name="phone_verification">PHONE VERIFICATION</string>
+    <string name="an_otp_is_sent_to_your_phone_number_n_91">An OTP is sent to your Phone Number.\n+91 **********</string>
+    <string name="an_otp_is_sent_to_your_email_address_n">An OTP is sent to your Email Address.\n*******@*****.***</string>
 </resources>

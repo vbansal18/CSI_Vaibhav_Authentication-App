@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_bg">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -27,6 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:textColor="@color/white"
                 android:text="@string/instagram"
                 android:textAlignment="center"
                 android:textSize="35sp"
@@ -105,9 +107,11 @@
 
                 <TextView
                     android:id="@+id/yearText"
+                    android:textColor="@color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toStartOf="@id/year"
+                    android:textStyle="bold"
                     android:text="@string/year"
                     android:textSize="17sp" />
 
@@ -115,6 +119,8 @@
                     android:id="@+id/year"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textAlignment="center"
+
                     android:layout_alignParentEnd="true" />
 
             </RelativeLayout>
@@ -123,7 +129,8 @@
                 android:id="@+id/branch_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true">
+                android:layout_alignParentStart="true"
+                >
 
                 <TextView
                     android:id="@+id/branchText"
@@ -131,13 +138,16 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:text="@string/branch"
-                    android:textSize="17sp" />
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
 
                 <Spinner
                     android:id="@+id/branch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toEndOf="@id/branchText" />
+                    android:layout_toEndOf="@id/branchText"
+                    android:textAlignment="center" />
 
 
             </RelativeLayout>
@@ -156,7 +166,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:layout_centerHorizontal="true"
                 android:orientation="horizontal">
 
                 <RadioButton
@@ -166,7 +175,9 @@
                     android:layout_marginStart="0dp"
                     android:layout_marginEnd="20dp"
                     android:onClick="onRadioButtonClicked"
-                    android:text="@string/male" />
+                    android:text="@string/male"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
 
                 <RadioButton
                     android:id="@+id/female"
@@ -175,7 +186,10 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:onClick="onRadioButtonClicked"
-                    android:text="@string/female" />
+                    android:text="@string/female"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
                 <RadioButton
                     android:id="@+id/other"
                     android:layout_width="wrap_content"
@@ -183,7 +197,9 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="0dp"
                     android:onClick="onRadioButtonClicked"
-                    android:text="@string/other" />
+                    android:text="@string/other"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
             </RadioGroup>
 
 
@@ -224,10 +240,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_centerInParent="true"
+                android:layout_marginEnd="4dp"
                 android:background="@drawable/layout_bg"
                 android:hint="@string/phone"
                 android:padding="8dp"
-                android:layout_marginEnd="4dp"
                 android:textSize="17sp" />
 
             <EditText
@@ -244,7 +260,6 @@
 
 
         <RelativeLayout
-            android:id="@+id/signUp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_width="match_parent"
@@ -252,10 +267,12 @@
             android:layout_marginTop="25dp">
 
 
-            <com.google.android.gms.common.SignInButton
+            <Button
+                android:id="@+id/signUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
+                android:background="@drawable/layout_bg"
                 android:text="@string/sign_up"
                 android:textAllCaps="false" />
         </RelativeLayout>
